@@ -1,0 +1,11 @@
+void reverse(char str[]);
+void decimal_to_binary(int decimal, char *binary);
+int get_sign(float number);
+int get_exponent(float number);
+int get_mantissa(float number);
+int get_ieee754(int sign, int exp, int mantissa);
+void add_ieee754(int sign, int exp, int mantissa, int sign2, int exp2, int mantissa2, int *signResult, int *expResult, int *mantissaResult);
+void printIEEE754(int mantissa, int exp, int sign);
+void printBinaryIEEE754(int mantissaResult, int expResult, int signResult);
+void print_ieee754_result(int sign, int exponent, int mantissa);
+float get_float_from_ieee754(int sign, int exponent, int mantissa);
